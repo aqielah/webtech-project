@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Season';
+    src: url('theseason.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    padding-top: 50px;
+    z-index: 10;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f6f3ee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li:first-child {
+    font-family: 'Season', sans-serif;
+    font-style: normal;
+    margin-right: auto;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    :hover {
+        text-decoration: none;
+    }
+}
+
+
+.hamburgerContainer {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: right 0.3s ease;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar.show {
+    right: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.sidebar a {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.menu-button {
+    display: none;
+}
+
+.ingredients {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    text-align: center;
+    gap: 80px;
+}
+
+
+.title {
+    font-family: 'Season', sans-serif;
+    font-size: 50px;
+    color: #333;
+}
+
+img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.menu {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+}
+
+.menu p {
+    text-align: center;
+    width: 300px;
+}
+
+.menu img {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+
+}
+.menu img {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    animation: rotate 25s infinite linear;
+  
+}
+
+.name {
+    font-family: 'Season', sans-serif;
+    font-size: 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    color: #f6f3ee;
+    background-color: #333;
+    font-family: 'Season', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+ 
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .ingredients{
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+
+    .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .desc{
+        width: 100%;
+    }
+
+    img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+}

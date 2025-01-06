@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="orderStyle.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="lightning.html">LULA</a>
+            <ul class="navbar-nav d-none d-lg-flex flex-row gap-4">
+                <li class="nav-item"><a class="nav-link" href="menuPage.html">menu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="order.html">order</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="find us.html">find us</a></li>
+            </ul>
+            <div class="menu-toggle d-lg-none" onclick="toggleMenu(this)">
+                <div class="top-bun"></div>
+                <div class="patty"></div>
+                <div class="bottom-bun"></div>
+            </div>
+        </div>
+        <div class="fullscreen-menu" id="mobile-nav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item"><a class="nav-link" href="menuPage.html">menu</a></li>
+                <li class="nav-item"><a class="nav-link active" href="order.html">order</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="find us.html">find us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <a href="menuPage.html" class="hero-link menu">menu</a>
+            <a href="https://www.instagram.com/bakingforlula?igsh=MWUxOWVzZTR0cGIycg==" class="hero-link order">order</a>
+            <a href="about.html" class="hero-link about">about</a>
+        </div>
+    </div>
+
+    <div class="container content-box">
+        <h2>Our Cookies!</h2>
+        <p>
+            Step into Lula's world of cookies, 
+            <br>
+            rafted with passion, farm-fresh ingredients,
+            <br> 
+            and the finest chocolates.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="orderScript.js"></script>
+</body>
+</html>

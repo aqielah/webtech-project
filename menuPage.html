@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="menuStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="lightning.html">LULA</a></li>
+                <li class="hideOnMobile"><a href="menuPage.html">menu</a></li>
+                <li class="hideOnMobile"><a href="order.html">order</a></li>
+                <li class="hideOnMobile"><a href="about.html">about</a></li>
+                <li class="hideOnMobile"><a href="find us.html">find us</a></li>
+                <div class="hamburgerContainer menu-button" onclick="toggleSidebar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="menuPage.html">menu</a></li>
+            <li><a href="order.html">order</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="find us.html">find us</a></li>
+        </ul>
+    </div>
+
+    <section class="ingredients">
+        <div class="container">
+            <div class="desc">
+                <p class="title">Know Your<br>Ingredients</p>
+            </div>
+            <div class="desc">
+                <img src="chocolate chunks.jpg" alt="chocolate chunks">
+                <p class="ingText">We are firm believers that exceptional taste originates from premium ingredients. From responsibly sourced chocolate to carefully hand-toasted sesame seeds, each element is thoughtfully chosen to ensure a truly remarkable experience.</p>
+            </div>
+            <div class="desc">
+                <img src="sea salt.jpg" alt="sea salt">
+                <p>Every ingredient tells a story. From raw honey to flaky sea salt, we carefully choose elements that add care, tradition, and love to every bite.</p>
+            </div>
+            <div class="desc">
+                <img src="cookieovem.jpeg" alt="chocolate chunks">
+                <p>Crafted with care, our ingredients bring comfort and joy. From the warmth of sesame to the sweetness of honey, every bite feels like home.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="desc">
+            <img src="matcha.png" alt="Black Sesame Chocolate Chip">
+            <p class="name">Black Sesame Chocolate Chip</p>
+            <p>Nutty toasted black sesame & special blend of Belgian Callebaut & 56% dark chocolate chunks.</p>
+            <p style="margin-top: 1rem; margin-bottom: 2rem;">RM 6</p> 
+        </div>
+        <div class="desc">
+            <img src="doublechoc.png" alt="Double Chocolate Chip">
+            <p class="name">Double Chocolate Chip</p>
+            <p>Bittersweet cocoa with a special blend of Callebaut dark chocolate & Beryl's white chocolate.</p>
+            <p style="margin-top: 1rem; margin-bottom: 2rem;">RM 6</p> 
+        </div>
+        <div class="desc">
+            <img src="choc.png" alt="Classic Chocolate Chip + Flaky Sea Salt">
+            <p class="name">Classic Chocolate Chip + Flaky Sea Salt</p>
+            <p>Special blend of Belgian Callebaut & Beryl's chips topped with Maldon sea salt flakes.</p>
+            <p style="margin-top: 1rem; margin-bottom: 2rem;">RM 6</p> 
+        </div>
+        <div class="desc">
+            <img src="misochoc.png" alt="Miso Chocolate Chip">
+            <p class="name">Miso Chocolate Chip</p>
+            <p>Earthy miso imported from Japan, toasted white sesame & decadent Callebaut.</p>
+            <p style="margin-top: 1rem; margin-bottom: 2rem;">RM 6</p> 
+        </div>
+    </section>
+
+    <script>
+        function toggleSidebar(hamburger) {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('show'); 
+            hamburger.classList.toggle('change'); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LULA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="lightning.html">LULA</a></li>
+            <li class="hideOnMobile"><a href="menuPage.html">menu</a></li>
+            <li class="hideOnMobile"><a href="order.html">order</a></li>
+            <li class="hideOnMobile"><a href="about.html">about</a></li>
+            <li class="hideOnMobile"><a href="find us.html">find us</a></li>
+            <div class="hamburgerContainer menu-button" onclick="toggleSidebar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div class="sidebar">
+    <ul>
+        <li><a href="menuPage.html">menu</a></li>
+        <li><a href="order.html">order</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="find us.html">find us</a></li>
+    </ul>
+</div>
+    <div>
+      <h1>bakingforlula</h1>
+      <h2>freshly homemade cookies</h2>
+    </div>
+  
+</nav>
+
+<script>
+  function toggleSidebar(hamburger) {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('show'); 
+      hamburger.classList.toggle('change'); 
+  }
+</script>
+</body>
+</html>
